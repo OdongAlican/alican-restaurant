@@ -76,7 +76,46 @@ function component() {
     faShoppingBasket.setAttribute('class', 'fas fa-shopping-basket')
     iconSection.appendChild(faShoppingBasket)
 
+    // item-section
+    let itemSection = document.createElement('div')
+    itemSection.setAttribute('class', 'item-section');
+    reservationInnerItem.appendChild(itemSection);
+
+    let itemSectionParagOne = document.createElement('p');
+    let itemSectionParagTwo = document.createElement('p');
+    itemSection.appendChild(itemSectionParagOne)
+    itemSection.appendChild(itemSectionParagTwo)
+    let itemSectionSmallOne = document.createElement('small');
+    let itemSectionSmallTwo = document.createElement('small');
+    itemSectionParagOne.appendChild(itemSectionSmallOne)
+    itemSectionParagTwo.appendChild(itemSectionSmallTwo)
+    itemSectionSmallOne.innerHTML = 'ITEM(S)';
+    itemSectionSmallTwo.setAttribute('class', 'small-one');
+    itemSectionParagTwo.innerHTML = '0';
     
+    // total-section
+
+    let totalSection = document.createElement('div')
+    totalSection.setAttribute('class', 'total-section');
+    reservationInnerItem.appendChild(totalSection);
+
+    let totalSectionParagOne = document.createElement('p');
+    let totalSectionParagTwo = document.createElement('p');
+    totalSectionParagTwo.setAttribute('class', 'small-two');
+    totalSection.appendChild(totalSectionParagOne)
+    totalSection.appendChild(totalSectionParagTwo)
+    let totalSectionSmallOne = document.createElement('small')
+    let totalSectionSmallTwo = document.createElement('small')
+    totalSectionParagOne.appendChild(totalSectionSmallOne)
+    totalSectionParagTwo.appendChild(totalSectionSmallTwo)
+    totalSectionSmallOne.innerHTML = 'TOTAL'
+    totalSectionSmallTwo.innerHTML = '$0.00'
+
+    let reservationInner = document.createElement('div');
+    reservationInner.setAttribute('class', 'reservation-inner');
+    reservationInner.innerHTML = 'RESERVATIONS';
+    reservations.appendChild(reservationInner)
+
     let restaurantHeader = document.createElement('p');
     restaurantHeader.innerHTML = 'RESTAURANT';
     let ownerName = document.createElement('h4');
