@@ -1,0 +1,617 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #EFEFEF;
+}
+
+.nav-bar-elements {
+    height: 150px;
+    background-color: #0B0D0F;
+    display: flex;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.inner-content {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-content div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.inner-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.inner-content a:hover {
+    color: #CD9933;
+    cursor: pointer;
+}
+
+.logo-section {
+    flex: 1;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.reservations {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-inner {
+    background-color: #CD9933;
+    padding: 15px 25px;
+    margin-right: 10px;
+}
+
+.reservation-inner-item {
+    display: flex;
+    padding: 0px;
+    text-align: center;
+    background-color: #1A1C20;
+}
+
+.reservation-inner-item div {
+    border-right: 0.1px solid #555;
+    padding: 10px 10px;
+}
+
+.reservation-inner-item p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 4px;
+    color: #666;
+}
+
+.total-section .small-two {
+    color: #CC9933;
+}
+
+.item-section .small-one {
+    color: #fff;
+}
+
+.reservation-inner-item div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.restaurant-details {
+    border: 2px solid #fff;
+    width: 30%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.restaurant-details h4 {
+    font-size: 40px;
+}
+
+.restaurant-details span {
+    color: #CD9933;
+    font-family: 'Great Vibes', cursive;
+    font-size: 26px;
+}
+
+.top-section {
+    height: 570px;
+    padding-top: 100px;
+    background-image: url('./images/main-page.jpg');
+}
+
+.restaurant-menu {
+    display: flex;
+}
+
+.listing-section {
+    flex: 1;
+}
+
+.grid-section {
+    flex: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2px 100px 2px 0;
+}
+
+.grid-element {
+    height: 250px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.listing-section {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.listing-section p {
+    color: #555;
+}
+
+.listing-section p:hover {
+    color: #999966;
+    cursor: pointer;
+}
+
+.grid-element .central {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.add-cart {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-element span {
+    color: #CD9933;
+}
+
+.grid-element p {
+    margin-bottom: 10px;
+}
+
+.grid-section .first {
+    background-image: url('./images/image_one.jpg');
+}
+
+.grid-section .second {
+    background-image: url('./images/image_two.jpg');
+}
+
+.grid-section .third {
+    background-image: url('./images/image_three.jpg');
+}
+
+.grid-section .fourth {
+    background-image: url('./images/image_four.jpg');
+}
+
+.grid-section .fifth {
+    background-image: url('./images/image_five.jpg');
+}
+
+.grid-section .sixth {
+    background-image: url('./images/image_six.jpg');
+}
+
+.testimonials-section {
+    text-align: center;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #555;
+}
+
+.testimonials-section h2,
+.right-section h2,
+.starters-heading h2,
+.about-us-section h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    color: #999966;
+    font-family: 'Great Vibes', cursive;
+}
+
+.testimonials-section h1,
+.right-section h1,
+.starters-heading h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.lower-section {
+    background-color: #16191E;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.subscription-section {
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: center;
+}
+
+.inner-left-section {
+    border-radius: 50%;
+    background-color: #CC9933;
+    color: #fff;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.right-section {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-section h1 {
+    color: #fff;
+}
+
+.lower-section p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.lower-section input {
+    height: 45px;
+    width: 300px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+}
+
+.lower-section button {
+    border: none;
+    height: 45px;
+    width: 200px;
+    background-color: #CC9933;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    outline: none;
+}
+
+.footer-section {
+    display: flex;
+    padding: 100px 0 20px;
+    background-color: #0B0D0F;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-first {
+    flex: 3;
+    text-align: right;
+    color: #888;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.footer-second {
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.footer-second p:hover {
+    color: #CC9933;
+    cursor: pointer;
+}
+
+.footer-third {
+    flex: 3;
+    text-align: center;
+}
+
+.footer-third p {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #888;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-third i {
+    color: #888;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.footer-third i:hover {
+    color: #CC9933;
+}
+
+.footer-fourth {
+    flex: 3;
+    line-height: 30px;
+    font-size: 13px;
+    color: #888;
+}
+
+.online-reservation {
+    border: 2px solid #CC9933;
+    width: 40%;
+    margin: auto;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    color: #CC9933;
+    font-weight: bold;
+}
+
+.rare-paragraph {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    color: #CC9933;
+}
+
+.testimonials-section i {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #CD9933;
+}
+
+.restaurant-menu {
+    height: 570px;
+    background-size: cover;
+}
+
+.restaurant-menu-menu {
+    background-image: url('./images/menu_main.jpg');
+}
+
+.restaurant-menu-contact {
+    background-image: url('./images/contact_us.jpg');
+}
+
+.restaurant-menu-about {
+    background-image: url('./images/about_us.jpg');
+}
+
+.central-restaurant-section {
+    border: 2px solid #fff;
+    width: 30%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-restaurant {
+    width: 40%;
+}
+
+.restaurant-label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #CD9933;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-label {
+    font-size: 120px;
+    font-family: 'Great Vibes', cursive;
+    margin: 30px 0;
+}
+
+.flavour-label {
+    color: #888;
+}
+
+.starters-section {
+    display: flex;
+    margin-top: 70px;
+}
+
+.starters-left {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 2;
+    text-align: center;
+    color: aliceblue;
+}
+
+.first-starters {
+    background-image: url('./images/menu_one.jpg');
+}
+
+.second-starters {
+    background-image: url('./images/menu_two.jpg');
+}
+
+.third-starters {
+    background-image: url('./images/menu_three.jpg');
+}
+
+.fourth-starters {
+    background-image: url('./images/menu_four.jpg');
+    margin-bottom: 50px;
+}
+
+.main-menu-section {
+    padding: 0 40px;
+}
+
+.starters-right {
+    flex: 3;
+    padding: 0 10px;
+}
+
+.food-name {
+    margin-top: 180px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fat-content {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.food-ingredients {
+    color: #999;
+}
+
+.food-price {
+    color: #CC9933;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.starters-heading {
+    text-align: center;
+}
+
+.price-details {
+    display: flex;
+    margin-top: 40px;
+}
+
+.price-details-first {
+    font-weight: bold;
+}
+
+.price-details-first small {
+    color: #666;
+    font-weight: lighter;
+}
+
+.price-details-second {
+    flex: 4;
+    border-bottom: 2px dotted #777;
+}
+
+.price-details-third {
+    font-weight: bold;
+    color: #CC9933;
+}
+
+.starters-prices {
+    color: #777;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contact-inputs {
+    text-align: center;
+    padding: 50px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.name-email-phone {
+    display: flex;
+}
+
+.name-email-phone input {
+    height: 35px;
+    border: none;
+    border: 2px solid #999;
+    background-color: #EFEFEF;
+    margin: 0 10px;
+    margin-top: 10px;
+    outline: none;
+    padding: 0 10px;
+}
+
+.name-input,
+.email-input,
+.phone-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.message-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.message-area textarea {
+    border: 2px solid #777;
+    outline: none;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.contact-button button {
+    border: none;
+    padding: 15px 20px;
+    background-color: #CD9933;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-us-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.inner-about-section {
+    display: flex;
+}
+
+.about-main {
+    flex: 2;
+    text-align: left;
+}
+
+.about-main p {
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    background-image: url('./images/about_one.jpg');
+    background-size: contain;
+}
+
+.senior-chef {
+    font-size: 10px;
+}
