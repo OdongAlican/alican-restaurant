@@ -618,6 +618,7 @@
 
 
 .hide-restaurant-menu,
-.hide-testimonials-section {
+.hide-testimonials-section,
+.hide-main-menu-section {
     display: none;
 }
