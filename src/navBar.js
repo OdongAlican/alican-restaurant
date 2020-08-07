@@ -112,7 +112,26 @@ const navBar = () => {
     reservationInner.setAttribute('class', 'reservation-inner');
     reservationInner.innerHTML = 'RESERVATIONS';
     reservations.appendChild(reservationInner)
-    return content;
+
+    // restaurant-details
+
+    let restaurantDetails = document.createElement('div')
+    restaurantDetails.setAttribute('class', 'restaurant-details');
+    topSection.appendChild(restaurantDetails)
+
+    let restaurantDetailsPg = document.createElement('p')
+    restaurantDetailsPg.innerHTML = 'RESTAURANT'
+    let restaurantDetailsH4 = document.createElement('h4')
+    restaurantDetailsH4.innerHTML = "ALICAN'S"
+    let restaurantDetailsSpan = document.createElement('span')
+    restaurantDetailsSpan.innerHTML = 'Delicious flavours'
+    let restaurantDetailsH5 = document.createElement('p')
+    restaurantDetailsH5.innerHTML = 'FRESH AND DELICIOUS'
+    restaurantDetails.appendChild(restaurantDetailsPg)
+    restaurantDetails.appendChild(restaurantDetailsH4)
+    restaurantDetails.appendChild(restaurantDetailsSpan)
+    restaurantDetails.appendChild(restaurantDetailsH5)
+    
 
 }
 
