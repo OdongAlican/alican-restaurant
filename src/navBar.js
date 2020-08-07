@@ -21,11 +21,13 @@ const navBar = () => {
     let innerContent = document.createElement('div');
     innerContent.setAttribute('class', 'inner-content');
     navBarElements.appendChild(innerContent);
+  
 
     // home section
     let homeSection = document.createElement('div');
-    homeSection.setAttribute('class', 'home-section')
-    let homeSectionAnchor = document.createElement('a')
+    homeSection.setAttribute('class', 'home-section');
+    let homeSectionAnchor = document.createElement('button')
+    homeSectionAnchor.setAttribute('id', 'homeNav')
     homeSectionAnchor.innerHTML = "HOME";
     homeSection.appendChild(homeSectionAnchor)
     innerContent.appendChild(homeSection);
@@ -34,7 +36,8 @@ const navBar = () => {
 
     let menuSection = document.createElement('div');
     menuSection.setAttribute('class', 'menu-section')
-    let menuSectionAnchor = document.createElement('a')
+    let menuSectionAnchor = document.createElement('button')
+    menuSectionAnchor.setAttribute('id', 'menuNav')
     menuSectionAnchor.innerHTML = "MENU";
     menuSection.appendChild(menuSectionAnchor)
     innerContent.appendChild(menuSection);
@@ -132,6 +135,7 @@ const navBar = () => {
     restaurantDetails.appendChild(restaurantDetailsSpan)
     restaurantDetails.appendChild(restaurantDetailsH5)
     
+
 
 }
 
