@@ -56,7 +56,8 @@ const navBar = () => {
 
     let contactSection = document.createElement('div');
     contactSection.setAttribute('class', 'contact-section')
-    let contactSectionAnchor = document.createElement('a')
+    let contactSectionAnchor = document.createElement('button')
+    contactSectionAnchor.setAttribute('id', 'contactNav')
     contactSectionAnchor.innerHTML = "CONTACT";
     contactSection.appendChild(contactSectionAnchor)
     innerContent.appendChild(contactSection);

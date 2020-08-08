@@ -620,6 +620,7 @@
 .hide-restaurant-menu,
 .hide-testimonials-section,
 .hide-main-menu-section,
-.hide-about-us-section {
+.hide-about-us-section,
+.hide-contact-inputs {
     display: none;
 }
