@@ -1,75 +1,70 @@
 const contact = () => {
+  const content = document.getElementById('content');
 
-    let content = document.getElementById('content');
+  const contactInputs = document.createElement('div');
+  contactInputs.setAttribute('class', 'contact-inputs hide-contact-inputs');
+  content.appendChild(contactInputs);
 
-    let contactInputs = document.createElement('div')
-    contactInputs.setAttribute('class', 'contact-inputs hide-contact-inputs')
-    content.appendChild(contactInputs)
+  const contactInputsPg = document.createElement('p');
+  contactInputsPg.innerHTML = 'CONTACT DETAILS';
+  contactInputs.appendChild(contactInputsPg);
 
-    let contactInputsPg = document.createElement('p')
-    contactInputsPg.innerHTML = 'CONTACT DETAILS'
-    contactInputs.appendChild(contactInputsPg)
+  const nameEmailPhone = document.createElement('div');
+  nameEmailPhone.setAttribute('class', 'name-email-phone');
+  contactInputs.appendChild(nameEmailPhone);
 
-    let nameEmailPhone = document.createElement('div')
-    nameEmailPhone.setAttribute('class', 'name-email-phone')
-    contactInputs.appendChild(nameEmailPhone)
+  function contactDeatils() {
+    const inputDetails = [
+      {
+        className: 'name-input',
+        labelName: 'name',
+        inputType: 'text',
+        labelContent: 'Name',
+      },
+      {
+        className: 'email-input',
+        labelName: 'email',
+        inputType: 'email',
+        labelContent: 'Email',
+      },
+      {
+        className: 'phone-input',
+        labelName: 'number',
+        inputType: 'number',
+        labelContent: 'Phone Number',
+      },
+    ];
 
-    function contactDeatils(){
+    for (let i = 0; i < inputDetails.length; i += 1) {
+      const nameInput = document.createElement('div');
+      nameInput.setAttribute('class', `input ${inputDetails[i].className}`);
+      nameEmailPhone.appendChild(nameInput);
 
-        let inputDetails = [
-            {
-                className: 'name-input',
-                labelName: 'name',
-                inputType: 'text',
-                labelContent: 'Name'
-            },
-            {
-                className: 'email-input',
-                labelName: 'email',
-                inputType: 'email',
-                labelContent: 'Email'
-            },
-            {
-                className: 'phone-input',
-                labelName: 'number',
-                inputType: 'number',
-                labelContent: 'Phone Number'
-            }
-        ]
+      const nameInputLabel = document.createElement('label');
+      nameInputLabel.setAttribute('for', ` ${inputDetails[i].labelName} `);
+      nameInputLabel.innerHTML = inputDetails[i].labelContent;
+      nameInput.appendChild(nameInputLabel);
 
-        for(let i = 0; i < inputDetails.length; i++){
-
-        let nameInput = document.createElement('div')
-        nameInput.setAttribute('class', `input ${ inputDetails[i].className }`)
-        nameEmailPhone.appendChild(nameInput)
-            console.log(inputDetails[i].className)
-
-        let nameInputLabel = document.createElement('label')
-        nameInputLabel.setAttribute('for', ` ${inputDetails[i].labelName} `)
-        nameInputLabel.innerHTML = inputDetails[i].labelContent
-        nameInput.appendChild(nameInputLabel)
-    
-        let nameInputInput = document.createElement('input')
-        nameInputInput.setAttribute('type', ` ${inputDetails[i].inputType} `)
-        nameInput.appendChild(nameInputInput)
-        }
-
+      const nameInputInput = document.createElement('input');
+      nameInputInput.setAttribute('type', ` ${inputDetails[i].inputType} `);
+      nameInput.appendChild(nameInputInput);
     }
+  }
 
-    contactDeatils()
+  contactDeatils();
 
-    let messageArea = document.createElement('div')
-    messageArea.setAttribute('class', 'message-area')
-    contactInputs.appendChild(messageArea)
+  const messageArea = document.createElement('div');
+  messageArea.setAttribute('class', 'message-area');
+  contactInputs.appendChild(messageArea);
 
-    let messageAreaLabel = document.createElement('label')
-    messageAreaLabel.innerHTML = 'Message'
-    messageArea.appendChild(messageAreaLabel)
+  const messageAreaLabel = document.createElement('label');
+  messageAreaLabel.innerHTML = 'Message';
+  messageArea.appendChild(messageAreaLabel);
 
-    let messageAreaTextArea = document.createElement('textarea')
-    messageAreaTextArea.setAttribute('cols', '20')
-    messageAreaTextArea.setAttribute('rows', '10')
-    messageArea.appendChild(messageAreaTextArea)
-}
+  const messageAreaTextArea = document.createElement('textarea');
+  messageAreaTextArea.setAttribute('cols', '20');
+  messageAreaTextArea.setAttribute('rows', '10');
+  messageArea.appendChild(messageAreaTextArea);
+};
 
-export { contact }
+export { contact };
