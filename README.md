@@ -11,7 +11,7 @@ A Restaurant page developed using Javascript and and webpack as modules bundler
 
 ## Live demo Link
 
-[live link](https://raw.githack.com/OdongAlican/alican-restaurant/feature-branch/dist/index.html)
+[live link](https://rawcdn.githack.com/OdongAlican/alican-restaurant/036e7c0f75222c583ea6e74bdd5d4f2a404115a2/dist/index.html)
 
 ![Create Book](dist/images/Application.png)
 
