@@ -8,6 +8,7 @@ const menu = () => {
     function startersFunction(){
         let mainPrices = [['$18.50', '$18.90', '$24.90', '$15.90'],['$18.90', '$24.90', '$15.90', '$10.90'],
                             ['$7.90', '$6.00', '$6.40', '$5.90'],['$18.40', '$10.90', '$11.90', '$13.50']]
+                            
         let mainFoods = [ ['CRAB CAKES', 'WHITEBAIT & DILL MAYO', 'WATERMELON & FETA SALAD', 'HALLOUMI WITH GRIDDLED VEGETABLES'],
                           ['SPAGHETTI ALLA CARBONARA', 'BAKED TERIYAKI CHICKEN', 'APPLE CIDER SAUCE AND PORK LOIN CHOPS', 'CHICKEN ENCHILADAS '],
                           ['ACORD CANDY COOKIES', 'APPLE SLAB PIE', 'APPLE PIE WITH CINNAMON & ICECREAM', 'CARROT CAKE'],

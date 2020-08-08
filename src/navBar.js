@@ -46,7 +46,8 @@ const navBar = () => {
 
      let aboutSection = document.createElement('div');
      aboutSection.setAttribute('class', 'about-section')
-     let aboutSectionAnchor = document.createElement('a')
+     let aboutSectionAnchor = document.createElement('button')
+     aboutSectionAnchor.setAttribute('id', 'aboutNav')
      aboutSectionAnchor.innerHTML = "ABOUT";
      aboutSection.appendChild(aboutSectionAnchor)
      innerContent.appendChild(aboutSection);
