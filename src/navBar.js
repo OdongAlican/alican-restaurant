@@ -24,45 +24,42 @@ const navBar = () => {
     innerContent.setAttribute('class', 'inner-content');
     navBarElements.appendChild(innerContent);
   
+    const navButtons = () => {
+        let navContents = [
+            {
+                className: 'home-section',
+                contentID: 'homeNav',
+                contentDetails: 'HOME'
+            },
+            {
+                className: 'menu-section',
+                contentID: 'menuNav',
+                contentDetails: 'MENU'
+            },
+            {
+                className: 'about-section',
+                contentID: 'aboutNav',
+                contentDetails: 'ABOUT'
+            },
+            {
+                className: 'contact-section',
+                contentID: 'contactNav',
+                contentDetails: 'CONTACT'
+            }
+        ]
 
-    // home section
-    let homeSection = document.createElement('div');
-    homeSection.setAttribute('class', 'home-section');
-    let homeSectionAnchor = document.createElement('button')
-    homeSectionAnchor.setAttribute('id', 'homeNav')
-    homeSectionAnchor.innerHTML = "HOME";
-    homeSection.appendChild(homeSectionAnchor)
-    innerContent.appendChild(homeSection);
+        for(let i = 0; i < navContents.length; i++){
+            let homeSection = document.createElement('div');
+            homeSection.setAttribute('class', `${ navContents[i].className }`);
+            let homeSectionAnchor = document.createElement('button')
+            homeSectionAnchor.setAttribute('id', `${ navContents[i].contentID }`)
+            homeSectionAnchor.innerHTML = navContents[i].contentDetails
+            homeSection.appendChild(homeSectionAnchor)
+            innerContent.appendChild(homeSection);
+        }   
+    }
 
-    // menu section
-
-    let menuSection = document.createElement('div');
-    menuSection.setAttribute('class', 'menu-section')
-    let menuSectionAnchor = document.createElement('button')
-    menuSectionAnchor.setAttribute('id', 'menuNav')
-    menuSectionAnchor.innerHTML = "MENU";
-    menuSection.appendChild(menuSectionAnchor)
-    innerContent.appendChild(menuSection);
-
-     // about section
-
-     let aboutSection = document.createElement('div');
-     aboutSection.setAttribute('class', 'about-section')
-     let aboutSectionAnchor = document.createElement('button')
-     aboutSectionAnchor.setAttribute('id', 'aboutNav')
-     aboutSectionAnchor.innerHTML = "ABOUT";
-     aboutSection.appendChild(aboutSectionAnchor)
-     innerContent.appendChild(aboutSection);
-
-    // contact section
-
-    let contactSection = document.createElement('div');
-    contactSection.setAttribute('class', 'contact-section')
-    let contactSectionAnchor = document.createElement('button')
-    contactSectionAnchor.setAttribute('id', 'contactNav')
-    contactSectionAnchor.innerHTML = "CONTACT";
-    contactSection.appendChild(contactSectionAnchor)
-    innerContent.appendChild(contactSection);
+    navButtons()
 
     let reservations = document.createElement('div');
     reservations.setAttribute('class', 'reservations');
