@@ -1,3 +1,5 @@
+import { mainImage } from './logo' 
+
 const navBar = () => {
     let content = document.getElementById('content');
     content.setAttribute("class","container");
@@ -118,26 +120,10 @@ const navBar = () => {
     reservationInner.innerHTML = 'RESERVATIONS';
     reservations.appendChild(reservationInner)
 
-    // restaurant-details
-
-    let restaurantDetails = document.createElement('div')
-    restaurantDetails.setAttribute('class', 'restaurant-details');
-    topSection.appendChild(restaurantDetails)
-
-    let restaurantDetailsPg = document.createElement('p')
-    restaurantDetailsPg.innerHTML = 'RESTAURANT'
-    let restaurantDetailsH4 = document.createElement('h4')
-    restaurantDetailsH4.innerHTML = "ALICAN'S"
-    let restaurantDetailsSpan = document.createElement('span')
-    restaurantDetailsSpan.innerHTML = 'Delicious flavours'
-    let restaurantDetailsH5 = document.createElement('p')
-    restaurantDetailsH5.innerHTML = 'FRESH AND DELICIOUS'
-    restaurantDetails.appendChild(restaurantDetailsPg)
-    restaurantDetails.appendChild(restaurantDetailsH4)
-    restaurantDetails.appendChild(restaurantDetailsSpan)
-    restaurantDetails.appendChild(restaurantDetailsH5)
-    
-
+    topSection.appendChild(mainImage.homeLogo())
+    topSection.appendChild(mainImage.menuLogo())
+    topSection.appendChild(mainImage.aboutLogo())
+    topSection.appendChild(mainImage.contactLogo())
 
 }
 

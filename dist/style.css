@@ -392,14 +392,24 @@
 
 .restaurant-menu-menu {
     background-image: url('./images/menu_main.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
 }
 
 .restaurant-menu-contact {
     background-image: url('./images/contact_us.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
+
 }
 
 .restaurant-menu-about {
     background-image: url('./images/about_us.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
 }
 
 .central-restaurant-section {
@@ -621,6 +631,10 @@
 .hide-testimonials-section,
 .hide-main-menu-section,
 .hide-about-us-section,
-.hide-contact-inputs {
+.hide-contact-inputs,
+.hide-contact-logo,
+.hide-about-logo,
+.hide-menu-logo,
+.hide-home-logo {
     display: none;
 }
