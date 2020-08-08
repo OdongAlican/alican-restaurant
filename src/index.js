@@ -30,6 +30,11 @@ navBar()
       document.querySelector('.restaurant-details').classList.remove('hide-home-logo')
       document.querySelector('.restaurant-menu-about').classList.add('hide-about-logo')
       document.querySelector('.restaurant-menu-contact').classList.add('hide-contact-logo')
+     
+      document.getElementById('homeNav').classList.add('active-button')
+      document.getElementById('menuNav').classList.remove('active-button')
+      document.getElementById('aboutNav').classList.remove('active-button')
+      document.getElementById('contactNav').classList.remove('active-button')
     }
   });
 
@@ -43,6 +48,11 @@ navBar()
     document.querySelector('.restaurant-details').classList.add('hide-home-logo')
     document.querySelector('.restaurant-menu-about').classList.add('hide-about-logo')
     document.querySelector('.restaurant-menu-contact').classList.add('hide-contact-logo')
+
+    document.getElementById('homeNav').classList.remove('active-button')
+    document.getElementById('menuNav').classList.add('active-button')
+    document.getElementById('aboutNav').classList.remove('active-button')
+    document.getElementById('contactNav').classList.remove('active-button')
   })
 
   document.getElementById('aboutNav').addEventListener('click', function(){
@@ -55,6 +65,12 @@ navBar()
     document.querySelector('.restaurant-menu-menu').classList.add('hide-menu-logo')
     document.querySelector('.restaurant-details').classList.add('hide-home-logo')
     document.querySelector('.restaurant-menu-contact').classList.add('hide-contact-logo')
+
+
+    document.getElementById('homeNav').classList.remove('active-button')
+    document.getElementById('menuNav').classList.remove('active-button')
+    document.getElementById('aboutNav').classList.add('active-button')
+    document.getElementById('contactNav').classList.remove('active-button')
   })
 
   document.getElementById('contactNav').addEventListener('click', function(){
@@ -67,6 +83,12 @@ navBar()
     document.querySelector('.restaurant-menu-about').classList.add('hide-about-logo')
     document.querySelector('.restaurant-menu-menu').classList.add('hide-menu-logo')
     document.querySelector('.restaurant-details').classList.add('hide-home-logo')
+
+
+    document.getElementById('homeNav').classList.remove('active-button')
+    document.getElementById('menuNav').classList.remove('active-button')
+    document.getElementById('aboutNav').classList.remove('active-button')
+    document.getElementById('contactNav').classList.add('active-button')
   })
 
   footer()

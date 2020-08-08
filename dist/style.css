@@ -638,3 +638,16 @@
 .hide-home-logo {
     display: none;
 }
+
+.inner-content button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.active-button {
+    background-color: #CD9933;
+    border: 1px solid #fff;
+    color: #fff;
+}
