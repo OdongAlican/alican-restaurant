@@ -67,4 +67,4 @@ const contact = () => {
   messageArea.appendChild(messageAreaTextArea);
 };
 
-export { contact };
+export default contact;

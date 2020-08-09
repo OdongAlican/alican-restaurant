@@ -99,4 +99,4 @@ const home = () => {
   testimonialsSection.appendChild(testimonialsSectionPgTwo);
 };
 
-export { home };
+export default home;

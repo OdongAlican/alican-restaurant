@@ -1,9 +1,9 @@
-import { navBar } from './navBar';
-import { footer } from './footer';
-import { home } from './home';
-import { menu } from './menu';
-import { about } from './about';
-import { contact } from './contact';
+import navBar from './navBar';
+import footer from './footer';
+import home from './home';
+import menu from './menu';
+import about from './about';
+import contact from './contact';
 
 function component() {
   navBar();

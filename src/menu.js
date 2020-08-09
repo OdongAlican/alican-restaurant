@@ -157,4 +157,4 @@ const menu = () => {
   startersFunction();
 };
 
-export { menu };
+export default menu;

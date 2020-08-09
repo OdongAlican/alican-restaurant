@@ -131,4 +131,4 @@ const mainImage = (() => {
   };
 })();
 
-export { mainImage };
+export default mainImage;

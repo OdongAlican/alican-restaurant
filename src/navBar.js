@@ -1,4 +1,4 @@
-import { mainImage } from './logo';
+import mainImage from './logo';
 
 const navBar = () => {
   const content = document.getElementById('content');
@@ -124,4 +124,4 @@ const navBar = () => {
   topSection.appendChild(mainImage.contactLogo());
 };
 
-export { navBar };
+export default navBar;

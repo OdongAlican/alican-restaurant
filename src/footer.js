@@ -137,4 +137,4 @@ const footer = () => {
   footerFourth.appendChild(footerFourthSix);
 };
 
-export { footer };
+export default footer;

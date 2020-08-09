@@ -100,7 +100,6 @@
 .reservation-inner-item div {
     display: flex;
     flex-direction: column;
-
 }
 
 .restaurant-details {
@@ -625,7 +624,6 @@
 .senior-chef {
     font-size: 10px;
 }
-
 
 .hide-restaurant-menu,
 .hide-testimonials-section,

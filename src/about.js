@@ -47,4 +47,4 @@ const about = () => {
   innerAboutSection.appendChild(aboutImage);
 };
 
-export { about };
+export default about;
