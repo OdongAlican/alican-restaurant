@@ -49,7 +49,7 @@ const contact = () => {
       nameInputInput.setAttribute('type', ` ${inputDetails[i].inputType} `);
       nameInput.appendChild(nameInputInput);
     }
-  }
+  };
 
   contactDeatils();
 

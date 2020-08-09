@@ -88,6 +88,6 @@ const component = () => {
   });
 
   footer();
-}
+};
 
 document.body.appendChild(component());

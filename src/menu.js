@@ -152,7 +152,7 @@ const menu = () => {
 
       displayPrices();
     }
-  }
+  };
 
   startersFunction();
 };
