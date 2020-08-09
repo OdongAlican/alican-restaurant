@@ -5,7 +5,7 @@ const menu = () => {
   mainMenuSection.setAttribute('class', 'main-menu-section hide-main-menu-section');
   content.appendChild(mainMenuSection);
 
-  function startersFunction() {
+  const startersFunction = () => {
     const mainPrices = [['$18.50', '$18.90', '$24.90', '$15.90'], ['$18.90', '$24.90', '$15.90', '$10.90'],
       ['$7.90', '$6.00', '$6.40', '$5.90'], ['$18.40', '$10.90', '$11.90', '$13.50']];
 

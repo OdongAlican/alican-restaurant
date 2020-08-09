@@ -5,7 +5,7 @@ import menu from './menu';
 import about from './about';
 import contact from './contact';
 
-function component() {
+const component = () => {
   navBar();
 
   home();

@@ -13,7 +13,7 @@ const contact = () => {
   nameEmailPhone.setAttribute('class', 'name-email-phone');
   contactInputs.appendChild(nameEmailPhone);
 
-  function contactDeatils() {
+  const contactDeatils = () => {
     const inputDetails = [
       {
         className: 'name-input',
