@@ -100,7 +100,6 @@
 .reservation-inner-item div {
     display: flex;
     flex-direction: column;
-
 }
 
 .restaurant-details {
@@ -392,14 +391,24 @@
 
 .restaurant-menu-menu {
     background-image: url('./images/menu_main.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
 }
 
 .restaurant-menu-contact {
     background-image: url('./images/contact_us.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
+
 }
 
 .restaurant-menu-about {
     background-image: url('./images/about_us.jpg');
+    height: 570px;
+    display: flex;
+    align-items: center;
 }
 
 .central-restaurant-section {
@@ -614,4 +623,29 @@
 
 .senior-chef {
     font-size: 10px;
+}
+
+.hide-restaurant-menu,
+.hide-testimonials-section,
+.hide-main-menu-section,
+.hide-about-us-section,
+.hide-contact-inputs,
+.hide-contact-logo,
+.hide-about-logo,
+.hide-menu-logo,
+.hide-home-logo {
+    display: none;
+}
+
+.inner-content button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.active-button {
+    background-color: #CD9933;
+    border: 1px solid #fff;
+    color: #fff;
 }
